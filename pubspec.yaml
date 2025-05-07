@@ -1,0 +1,185 @@
+name: finan
+description: Plataforma para solicitação e acompanhamento de cessão de crédito
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 3.9.4+166
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # connection
+  curl_logger_dio_interceptor: ^1.0.0
+  dio: 5.5.0+1
+  http_parser: any
+  web_socket_channel: ^3.0.1
+
+  # resources
+
+  mobile_scanner: ^6.0.10
+  app_links: ^6.1.4
+  open_settings_plus: ^0.4.0
+  calendar_date_picker2: ^1.1.5
+  connectivity_plus: ^6.0.3
+  device_info_plus: 11.1.1
+  facebook_app_events: ^0.19.0
+  file_picker: ^8.1.4
+  flutter_keychain: ^2.4.0
+  flutter_local_notifications: ^18.0.1
+  flutter_logs: ^2.1.11
+  flutter_pdfview: ^1.3.4
+  flutter_svg: ^2.0.10+1
+  geocoding: ^3.0.0
+  geolocator: ^13.0.2
+  image: any
+  intl: ^0.19.0
+  open_file: ^3.5.10
+  package_info_plus: ^8.1.1
+  path_provider: ^2.0.15
+  permission_handler: ^11.4.0
+  share_plus: ^10.1.2
+  url_launcher: ^6.1.8
+  video_player: ^2.9.2
+  cached_network_image: ^3.4.1
+  battery_plus: ^6.2.1
+  in_app_review: ^2.0.10
+
+  # validation
+  brasil_fields: ^1.14.3
+  cpf_cnpj_validator: ^2.0.0
+  flutter_timezone: ^3.0.1
+  mask_text_input_formatter: ^2.3.0
+  timezone: ^0.10.0
+  equatable: ^2.0.5
+
+  # storage
+  collection: ^1.18.0
+  local_auth: ^2.2.0
+
+  # Ui
+  auto_size_text: ^3.0.0
+  card_loading: ^0.3.2
+  flutter_easyloading: ^3.0.5
+  flutter_image_compress: ^2.1.0
+  flutter_markdown: ^0.7.4+2
+  flutter_native_splash: ^2.2.4
+  loading_animation_widget: ^1.3.0
+  lottie: ^3.1.0
+  material_symbols_icons: ^4.2741.0
+  shimmer: ^3.0.0
+  rive: 0.13.20
+
+  # state and handlers
+  flutter_modular: ^6.3.4
+  result_dart: ^1.1.1
+  flutter_bloc: ^8.1.3
+
+  # firebase
+  cloud_firestore: ^5.5.0
+  firebase_analytics: ^11.3.5
+  firebase_core: ^3.8.0
+  firebase_crashlytics: ^4.1.5
+  firebase_messaging: ^15.1.5
+  firebase_remote_config: ^5.1.5
+  firebase_database_mocks: ^0.7.0
+
+  # security
+  crypto: ^3.0.3
+  encrypt: ^5.0.1
+  safe_device: ^1.1.9
+  uuid: ^4.4.0
+
+  #biometrics
+  unico_check: ^4.27.0
+
+  #remover
+  fluttertoast: ^8.2.12
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+  http_mock_adapter: ^0.6.1
+  husky: ^0.1.7
+
+  mocktail: ^1.0.4
+  rename: ^3.0.1
+  dart_code_linter: ^1.2.1
+  bloc_test: ^9.1.7
+  firebase_core_platform_interface: 5.3.0
+
+flutter_launcher_icons:
+  image_path: "assets/launcher/ios.png"
+  image_path_android: "assets/launcher/android.png"
+  image_path_ios: "assets/launcher/ios.png"
+  android: true
+  ios: true
+  background_color_ios: "#ffffff"
+
+flutter_native_splash:
+  color: "#0065bd"
+  image: assets/background/nagro_3x.png
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/general/logo/
+    - assets/general/icon/
+    - assets/general/flat_picture/
+    - assets/general/snackbar_status/
+
+    - assets/access_control/icon/
+    - assets/access_control/background/
+    - assets/access_control/flat_picture/
+
+    - assets/biometric_signature/flat_picture/
+    - assets/biometric_signature/background/
+    - assets/biometric_signature/icon/
+    - assets/biometric_signature/lottie/
+    - assets/biometric_signature/gif/
+
+    - assets/commodities/icon/
+
+    - assets/credit/credit_request_button/
+
+    - assets/help/icon/
+
+    - assets/home/icon/
+    - assets/home/learn_more/
+    - assets/home/animation/
+
+    - assets/home/bottom_navigator/
+
+    - assets/pre_approved/flat_picture/
+
+    - assets/profile/icon/
+    - assets/notification/
+    - assets/bank_slip/flat_picture/
+    - assets/home/animation/consortium-animate.riv
+
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/general/fonts/Poppins-Regular.ttf
+          weight: 300
+        - asset: assets/general/fonts/Poppins-Medium.ttf
+          weight: 400
