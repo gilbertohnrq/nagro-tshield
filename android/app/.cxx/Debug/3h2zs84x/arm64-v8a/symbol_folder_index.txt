@@ -1,0 +1,1 @@
+C:\dev\nagro-tshield\build\app\intermediates\cxx\Debug\3h2zs84x\obj\arm64-v8a
