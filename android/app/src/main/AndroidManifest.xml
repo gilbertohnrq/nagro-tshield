@@ -24,7 +24,7 @@
     </queries>
 
     <application
-        android:name="${applicationName}"
+        android:name="com.nagro.Nagro.MainApplication"
         android:allowBackup="false"
         android:fullBackupOnly="false"
         android:icon="@mipmap/ic_launcher"
